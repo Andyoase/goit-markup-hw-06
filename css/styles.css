@@ -714,17 +714,22 @@ input::placeholder {
     color: #212121;
 }
 
+.input-container svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 12px;
+}
+
 input, textarea  {
     height: 40px;
     border-radius: 4px;
     border: 1px solid  rgba(33, 33, 33, 0.2);
+    padding: 11px 12px 11px 42px;
 }
 
-.input-container svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 
 
 
