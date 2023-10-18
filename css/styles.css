@@ -688,6 +688,7 @@ footer {
 
 .is-hidden {
     visibility: hidden;
+    display: none;
    
 }
 
@@ -922,13 +923,13 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
 
 .products-list li {
     border: 1px solid #eee;
-    margin-bottom: 30px;
+    flex: 1 1 auto;
 }
 
 .products-list li:hover  {
