@@ -645,6 +645,21 @@ footer {
     cursor: pointer;
 }
 
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subscribe h3 {
+    font-family: var(--link-text);
+    font-size: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-email {
+    width: 358px;
+}
+
 .modal {
     position: fixed;
     width: 100vw;
