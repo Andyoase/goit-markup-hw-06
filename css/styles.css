@@ -759,6 +759,52 @@ input:focus + svg {
     fill: rgba(33, 150, 243, 1);
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.label-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(117, 117, 117, 1);
+}
+
+.terms {
+    color: rgba(33, 150, 243, 1);
+    text-decoration: underline;
+}
+
+.checkbox-input {
+    appearance: none;
+    position: absolute;
+}
+
+.checkmark {
+    display: inline-block;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    vertical-align: sub;
+}
+
+.check-mark {
+    display: block;
+    height: 15px;
+    width: 16px;
+}
+
+.checbox-input:checked + .checkmark {
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+}
+
 
 
 
