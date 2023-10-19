@@ -735,28 +735,55 @@ footer {
     left: 12px;
 }
 
-input, textarea  {
-    height: 40px;
+.textfield {
+  height: 40px;
+  padding: 11px 12px 11px 42px;
+}
+
+textarea {
+ height: 120px; 
+ padding: 12px 16px;
+}
+
+textarea::placeholder {
+    font-family: var(--link-text);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.textfield, textarea  {
+    
     border-radius: 4px;
     border: 1px solid  rgba(33, 33, 33, 0.2);
-    padding: 11px 12px 11px 42px;
     outline: none;
     transition: border .5s;
 }
 
 
-input:hover, 
+.textfield:hover, 
 textarea:hover {
     cursor:pointer;
 }
 
-input:focus,
+.textfield:focus,
 textarea:focus {
     border: 1px solid  rgba(33, 150, 243, 1);
 }
 
-input:focus + svg {
+.textfield:focus + svg {
     fill: rgba(33, 150, 243, 1);
+}
+
+.form-label {
+    font-family: var(--link-text);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
 }
 
 .checkbox-container {
@@ -767,14 +794,27 @@ input:focus + svg {
     cursor: pointer;
 }
 
-.label-text {
+.terms-and-conditions-container {
+    cursor: pointer;
+}
+
+.terms-and-conditions {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    
+}
+
+.terms-and-conditions span {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
 }
 
-.terms {
+
+
+.terms-and-conditions span a {
     color: rgba(33, 150, 243, 1);
     text-decoration: underline;
 }
@@ -786,7 +826,7 @@ input:focus + svg {
 
 .checkmark {
     display: inline-block;
-    border: 2px solid rgba(33, 33, 33, 1);
+    border: 1px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
     vertical-align: sub;
 }
