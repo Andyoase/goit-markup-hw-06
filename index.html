@@ -707,12 +707,21 @@
                     </li>
                 </ul>
             </div>
-            <form class="footer-subscribe">
-                <h3>SUBSCRIBE TO THE NEWSLETTER</h3>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required class="footer-email" />
+            <div class="footer-last">
+             <form class="footer-subscribe">
+                <h2>SUBSCRIBE TO THE NEWSLETTER</h2>
+                <label class="footer-mail" for="email">E-mail</label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="footer-email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
                 <button type="subscribe">Subscribe</button>
-            </form>
+             </form>
+            </div>
+            
         </div>
     </footer>
 
