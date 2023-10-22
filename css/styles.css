@@ -719,7 +719,7 @@ footer {
     gap: 10px;
 }
 
-.input-container {
+.form-group {
    display: flex; 
    flex-direction: column;
    gap: 4px;
@@ -727,17 +727,18 @@ footer {
 }
 
 
-.input-container svg {
+.form-group svg {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: calc(50% - 9px);
-    left: 12px;
+    top: 50%;
+    left: 11px;
 }
 
-.textfield {
-  height: 40px;
-  padding: 11px 12px 11px 42px;
+.form-control {
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 40px;
 }
 
 textarea {
@@ -754,7 +755,7 @@ textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.textfield, textarea  {
+.form-control, textarea  {
     
     border-radius: 4px;
     border: 1px solid  rgba(33, 33, 33, 0.2);
@@ -763,17 +764,17 @@ textarea::placeholder {
 }
 
 
-.textfield:hover, 
+.form-control:hover, 
 textarea:hover {
     cursor:pointer;
 }
 
-.textfield:focus,
+.form-control:focus,
 textarea:focus {
     border: 1px solid  rgba(33, 150, 243, 1);
 }
 
-.textfield:focus + svg {
+.form-control:focus + svg {
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -786,98 +787,19 @@ textarea:focus {
     color: rgba(117, 117, 117, 1);
 }
 
-.checkbox-container {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    display: block;
-    cursor: pointer;
-}
-
-.terms-and-conditions-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    cursor: pointer;
-    
-
-}
-
-.terms-and-conditions {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    
-}
-
-.terms-and-conditions span {
-    font-family: var(--link-text);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(117, 117, 117, 1);
-}
-
-
-
-.terms-and-conditions span a {
-    color: rgba(33, 150, 243, 1);
+.form-label a {
     text-decoration: underline;
+    color: rgba(33, 150, 243, 1);
 }
 
-.icon-checkbox {
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-input:not(:checked) {
-    display: none;
-}
-
-input:checked + label > svg {
-    display: none;
-}
-
-.checkbox-input {
-    appearance: none;
-    position: absolute;
-}
-
-.checkmark {
-    display: inline-block;
-    border: 1px solid rgba(33, 33, 33, 1);
-    border-radius: 2px;
-    vertical-align: sub;
-}
-
-.check-mark {
+.form-group .form-label {
     display: block;
-    height: 15px;
-    width: 16px;
 }
 
-.checbox-input:checked + .checkmark {
-    background-size: contain;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(33, 150, 243, 1);
-    border-color: rgba(33, 150, 243, 1);
+.form-inline .form-label {
+    display: inline-block;
+    vertical-align: middle;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* general */
