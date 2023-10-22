@@ -650,14 +650,41 @@ footer {
     flex-direction: column;
 }
 
-.footer-subscribe h3 {
+.footer-subscribe h2 {
     font-family: var(--link-text);
-    font-size: 700;
+    font-weight: 700;
+    font-size: 16px;
     color: rgba(255, 255, 255, 1);
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+label {
+    font-family: var(--link-text);
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-last {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+.footer-mail {
+    position: relative;
 }
 
 .footer-email {
     width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(47, 48, 58, 1);
 }
 
 .modal {
@@ -833,6 +860,11 @@ input {
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.modal-button:hover  {
+    cursor: pointer;
+    background-color: #188CE8;
 }
 
 
