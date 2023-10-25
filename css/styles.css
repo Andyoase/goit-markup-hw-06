@@ -192,14 +192,16 @@ nav li a:hover {
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
+    fill: #757575;
 }
 
 .contact-header li:hover a {
      color: var(--link-hover-color);
 }
 
-.contact-header li:hover svg path {
+.contact-header li:hover svg  {
     fill: var(--link-hover-color);
+    cursor: pointer;
 }
 
 .contact-header li a {
@@ -538,12 +540,13 @@ h5 {
     justify-content: center;
     width: 170px;
     height: 90px;
+    fill: #AFB1B8;
 }
 .customer-container .customer:hover {
     border-color: #2196F3;
 }
 
-.customer-container .customer:hover svg path{
+.customer-container .customer:hover svg {
     fill: #2196F3;
 }
 
@@ -681,8 +684,8 @@ footer {
     top:8px;
     right:8px;
     background: none;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 29px;
+    line-height: 18px;
 }
 
 .modal-text h2 {
@@ -692,6 +695,11 @@ footer {
     line-height: 23.44px;
     text-align: start;
 
+}
+
+.close-btn:hover {
+    color: #0060b6;
+    cursor: pointer;
 }
 
 .contact-form {
